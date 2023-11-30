@@ -33,5 +33,12 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           delete-branch: true
 
+      - name: Approve PR
+        uses: actions-cool/pr-approve@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          comment: |
+            HI @${{ github.event.pull_request.user.login }}, approve
+
 
 
