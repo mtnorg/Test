@@ -33,10 +33,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           delete-branch: true
 
-      - name: Auto-Formatter
-        uses: mezgoodle/auto-formatter@v1.0.2
-        env:
-            GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
 
 
