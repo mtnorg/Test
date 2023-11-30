@@ -20,8 +20,8 @@ jobs:
           branch: "PRbranchcreate1"
           base: master
           title: "demo for auto pr1"
-          committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}>
-          author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}>
+          committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} ${{ env.GIT_COMMIT_AUTHOR_EMAIL }}
+          author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} ${{ env.GIT_COMMIT_AUTHOR_EMAIL }}
           body:
             This is to show automatic PR creation
           token: ${{ secrets.GITHUB_TOKEN }}
