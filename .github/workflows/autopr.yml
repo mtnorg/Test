@@ -10,7 +10,7 @@ jobs:
   AutomaticPR:
     runs-on: ubuntu-latest
     permissions:
-      contents: read|write
+      contents: write-all
       pull-requests: read|write
     steps:
       - name: checking out code
