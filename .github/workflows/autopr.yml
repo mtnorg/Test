@@ -10,8 +10,8 @@ jobs:
   AutomaticPR:
     runs-on: ubuntu-latest
     permissions:
-      issues: write
-      pull-requests: write
+      contents: read|write
+      pull-requests: read|write
     steps:
       - name: checking out code
         uses: actions/checkout@v2
