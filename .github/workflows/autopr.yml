@@ -9,9 +9,6 @@ on:
 jobs:
   AutomaticPR:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write-all
-      pull-requests: read|write
     steps:
       - name: checking out code
         uses: actions/checkout@v2
