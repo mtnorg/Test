@@ -4,15 +4,6 @@ on:
   push:
     branches: 
       -'*'
-      -master
-  pull_request:
-    branches: 
-      -'*'
-      -main
-      -PRbranchcreate
-      -master
-  #workflow_dispatch:
-
 jobs:
   Pull_request:
     runs-on: ubuntu-latest
