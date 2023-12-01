@@ -34,7 +34,7 @@ jobs:
           delete-branch: true
       - name: Pull request number
         run: |
-          echo "Pull Request Number - ${{ github.event.pull_request_number }}"
+          echo "Pull Request Number - ${{ github.event.number }}"
 
 
 
