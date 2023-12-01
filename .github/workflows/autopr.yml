@@ -37,10 +37,12 @@ jobs:
           echo "Pull Request Number - ${{ steps.test-1.outputs.pull-request-number }}"
 
       - name: Approve Pull Request1
-        uses: juliangruber/approve-pull-request-action@v1
-        with:
-         github-token: ${{ secrets.APPROVER_DEMO }}
-         number: ${{ steps.test-1.outputs.pull-request-number }}
+        #uses: juliangruber/approve-pull-request-action@v1
+        run: |
+           echo "approver name - ${{ secrets.APPROVER_DEMO }}"
+        #with:
+         #github-token: ${{ secrets.APPROVER_DEMO }}
+         #number: ${{ steps.test-1.outputs.pull-request-number }}
 
 
 
