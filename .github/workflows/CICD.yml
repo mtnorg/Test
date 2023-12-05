@@ -22,7 +22,7 @@ jobs:
         
       - name: Raise PR
         id: test1
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v5
         with:
           branch: "branch1"
           base: master
